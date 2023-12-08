@@ -1,0 +1,17 @@
+[package]
+name = "sql_test"
+version = "0.1.0"
+authors = ["Josh Palmer <jpalmerwatkins@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+debug = true
+
+[dependencies]
+sqlx = { version = "0.5.1", features = [ "runtime-async-std-native-tls", "sqlite" ] }
+async-std = { version = "1.9.0", features = [ "attributes" ] }
+superluminal-perf = "0.1.1"
+futures = "0.3.13"
+dotenv = "0.15.0"
+wgpu = "0.7.0"
+winit = "0.24.0"
